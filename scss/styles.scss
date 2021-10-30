@@ -1,3 +1,15 @@
 @import "zeroing.scss"; 
 
 @import "header.scss";
+
+.container {
+	padding: 0 20px;
+}
+
+.main-content {
+	transition: 0.5s all ease 0s;
+
+	&.blure {
+		filter: blur(3.5px);
+	}
+}

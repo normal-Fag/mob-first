@@ -2,9 +2,14 @@
 	top: 0;
 	position: fixed;
 	width: 100%;
+	background-color: #2B4074;
+	z-index: 1;
 
 	&__container {
 		height: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 	&__logo {
 		width: 100px;
@@ -21,24 +26,60 @@
 		display: block;
 		background: #FFF;
 		position: relative;
+		border-radius: 2px;
 
 		&:before, 
 		&:after {
-			content: "";
-			left: 0;
-			position: absolute;
-			width: 33.333%;
+			left: 14px;
+			width: 30%;
 			height: 2px;
+			content: "";
+			position: absolute;
+			border-radius: 2px;
+			background: #2B4074;
+		}
+		&:before {
+			top: 15px;
+		}
+		&:after {
+			bottom: 15px;
+		}
+		span {
+			top: 19px;
+			left: 14px;
+			width: 30%;
+			height: 2px;
+			position: absolute;
+			border-radius: 2px;
 			background: #2B4074;
 		}
 
 	}
 }
 .menu {
+	top: 0%;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	z-index: -1;
+	height: 100vh;
+	position: fixed;
+	transition: 0.5s all ease 0s;
 	&__list {
+		display: flex;
+		height: 100vh;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
 	}
 	&__item {
+		margin-bottom: 20px;
 	}
 	&__link {
+		color: #2B4074;
+	}
+	&.active {
+		top: 0;
+		opacity: 1;
 	}
 }
