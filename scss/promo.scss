@@ -1,0 +1,40 @@
+.promo {
+	background: #2B4074;
+	&__text {
+		padding-top: 40px;
+		// margin-bottom: 40px;
+		text-align: center;
+		color: #fff;
+	}
+	&__title {
+		line-height: 24px;
+		font-size: 24px;
+		font-weight: 500;
+		font-family: Roboto;
+		margin-bottom: 10px;
+	}
+	&__subtitle {
+		font-family: Dosis;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 18px;
+	}
+	&__callback {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 40px 0;
+	}
+	&__button {
+		width: 200px;
+		height: 50px;
+		border-radius: 2px;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 18px;
+		color: #2B4074;
+	}
+}
