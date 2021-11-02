@@ -141,6 +141,27 @@ body {
   opacity: 1;
 }
 
+.intro {
+  background: url(../img/intro/bg-slider.jpg) center/cover no-repeat;
+  min-height: 193px;
+}
+.intro__slider {
+  background: rgba(33, 33, 33, 0.5);
+}
+.intro__item {
+  color: #fff;
+  text-align: center;
+}
+.intro__title {
+  font-family: "Roboto Condensed";
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 36px 0 28px;
+}
+
 .promo {
   background: #2B4074;
 }
